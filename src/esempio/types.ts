@@ -6,7 +6,7 @@ export type datianagrafici = {
     };
 
 
-    export type singlegiftcard = { 
+    export type giftCard = { 
         tipologia: 'digitale'| 'cartacea',
         taglio : 10 | 25 | 50 | 100,
         quantita : number;
@@ -14,5 +14,5 @@ export type datianagrafici = {
 
     export type ordine = {
         datiAnagrafici: datianagrafici;
-        giftcards: singlegiftcard[];
+        giftcards: giftCard[];
     }
