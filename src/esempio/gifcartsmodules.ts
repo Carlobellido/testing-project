@@ -1,14 +1,9 @@
-import { datianagrafici } from "./types";
+import { datianagrafici, ordine } from "./types";
 
 
-  export function newOrder(datiAnagrafici: datianagrafici) {
-    return datiAnagrafici;
-  }
-/*
-  export function isValidCodiceFiscale(codiceFiscale: string ): boolean {
-    if (codiceFiscale.length !== 16 ) {
-      return false;
+  export function newOrder(datiAnagrafici: datianagrafici):ordine {
+    return {
+      datiAnagrafici: datiAnagrafici,
+      giftcards: []
     }
-    return true;
   }
-  */
