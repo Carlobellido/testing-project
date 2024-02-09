@@ -34,15 +34,15 @@ test("Verifica che la giftcard sia stata aggiunta", () => {
 expect(nuovoOrdine.giftcards).toHaveLength(1);});
 
 test("Verica tipologia giftcard", () => {
-    expect(nuovoOrdine.giftcards[0].tipologia).toBe("fisica");
+    expect(nuovoOrdine.giftcards[0].tipologia).toBe("digitale");
   });
 
 test("Verifica taglio giftcard", () => {
-    expect(nuovoOrdine.giftcards[0].taglio).toBe(5);
+    expect(nuovoOrdine.giftcards[0].taglio).toBe(10);
   });
 
 test("Verifica quantita giftcard", () => {
-    expect(nuovoOrdine.giftcards[0].quantita).toBe(4);
+    expect(nuovoOrdine.giftcards[0].quantita).toBe(1);
   });
 
 
